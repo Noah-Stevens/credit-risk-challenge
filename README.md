@@ -1,4 +1,4 @@
-# Credit Risk Challenge — Loan Default Prediction — M20
+# Supervised Machine Learning — Loan Default Prediction — M20
 
 This project involves training and evaluating a supervised learning model to assess borrower credit risk.
 
