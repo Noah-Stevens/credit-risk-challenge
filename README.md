@@ -1,26 +1,54 @@
-# credit-risk-challenge
-Module 20 Supervised Learning Challenge
+# Credit Risk Challenge — Loan Default Prediction
 
-# Credit Risk Analysis Report
-## Overview of the Analysis
-The purpose of this analysis is to build and evaluate a machine learning model capable of identifying credit risk based on other known borrower conditions, such as borrower income, number of accounts, total debt, etc. By training a logistic regression classifier on historical lending data, the model aims to predict whether a loan is high-risk (1) or healthy (0). The values of high-risk (1) or healthy (0) loans is from the loan_status column in the dataset. This tool can assist financial institutions in making informed lending decisions and minimizing the risk of loan defaults.
+This project involves training and evaluating a supervised learning model to assess borrower credit risk.
 
-## Results
-### Model Used: Logistic Regression
+## Project Overview
 
-- Accuracy Score: 0.99
+### Objective  
+Develop a logistic regression classifier to predict loan default risk (high‑risk = 1 vs healthy = 0), using borrower-related features such as income, number of accounts, debt, etc.
 
-- Precision Score:
-  1. Healthy Loans (0): 1.00
-  2. High-Risk Loans (1): 0.84
+### Model Performance  
+- **Accuracy**: 0.99  
+- **Precision**  
+  - Healthy loans (0): 1.00  
+  - High‑risk loans (1): 0.84  
+- **Recall**  
+  - Healthy loans (0): 0.99  
+  - High‑risk loans (1): 0.98  
+- **F1‑Score (High‑risk loans)**: 0.91  
 
-- Recall Score:
-  1. Healthy Loans (0): 0.99
-  2. High-Risk Loans (1): 0.98
+The model achieves exceptional overall performance. It demonstrates strong ability to detect high-risk loans (recall = 0.98), though precision is slightly lower (0.84), meaning some false positives—an acceptable trade-off when aiming to minimize false negatives in credit risk assessment.
 
-- F1-Score for High-Risk Loans: 0.91
+## Repository Contents  
+- Credit_Risk — Jupyter notebook performing data preprocessing, model training, evaluation, and reporting  
+- README.md — This file  
+- LICENSE — GPL‑3.0 License  
 
-## Summary
-The logistic regression model demonstrated exceptional overall performance, with a 99% accuracy rate. It was especially effective at identifying high-risk loans, achieving a recall score of 0.98 — meaning it successfully detected 98% of all actual high-risk loans. While the precision for high-risk loans was slightly lower at 0.84 (indicating some false positives), this trade-off is acceptable in the context of credit risk, where it's often safer to be cautious and flag potentially risky loans. There is a possibility for overfitting on this module, due to the high rate of percision and accuracy, but the high volume of data points strengthens the integrity of the model.
+## Tools & Libraries  
+- Python & Jupyter Notebook  
+- scikit-learn — for model training, evaluation  
+- Pandas, NumPy — for data manipulation  
+- Matplotlib / seaborn — for visualizations (if applicable)  
 
-Given the model's high performance, especially in minimizing false negatives, such as looking over a high-risk loan, its use as a reliable tool for preliminary credit risk assessment is recommended. It can help the company reduce financial risk by more accurately identifying borrowers who are likely to default.
+## Quick Start  
+1. Clone the repo:  
+   ```bash
+   git clone https://github.com/Noah-Stevens/credit-risk-challenge.git
+   cd credit-risk-challenge
+   ```  
+2. Install dependencies:  
+   ```bash
+   pip install pandas scikit-learn matplotlib seaborn
+   ```  
+3. Run analysis:  
+   - Open `Credit_Risk.ipynb` in Jupyter and execute the notebook to reproduce results.
+
+## Summary & Caveats  
+The logistic regression model achieves strong performance metrics, particularly in minimizing false negatives. Given the extremely high accuracy and recall, there is potential for overfitting. However, the sizable dataset should mitigate that risk. This model is recommended for preliminary screening in credit risk workflows.
+
+## License  
+GPL‑3.0 License. See LICENSE file.
+
+## Author  
+Noah Stevens  
+[LinkedIn](https://www.linkedin.com/in/noah-stevens-2a47a3331/)
