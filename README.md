@@ -17,7 +17,7 @@ Develop a logistic regression classifier to predict loan default risk (high‑ri
   - High‑risk loans (1): 0.98  
 - **F1‑Score (High‑risk loans)**: 0.91  
 
-The model achieves exceptional overall performance. It demonstrates strong ability to detect high-risk loans (recall = 0.98), though precision is slightly lower (0.84), meaning some false positives—an acceptable trade-off when aiming to minimize false negatives in credit risk assessment.
+The model achieves exceptional overall performance. It demonstrates strong ability to detect high-risk loans (recall = 0.98), though precision is slightly lower (0.84). This means some false positives, which is an acceptable trade-off when aiming to minimize false negatives in credit risk assessment.
 
 ## Repository Contents  
 - Credit_Risk — Jupyter notebook performing data preprocessing, model training, evaluation, and reporting  
